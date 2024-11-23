@@ -22,7 +22,7 @@ def counter_player(game_info):
     if last_opponent_move == "attack":
         return "defend"  # Counter attack
     elif last_opponent_move == "defend":
-        return "attack"  # Try to break through
+        return "rebuild" # Try to break through
     elif last_opponent_move == "rebuild":
         return "attack"  # Take advantage of their rebuilding
     else:

@@ -8,6 +8,7 @@ from ai_contenders.counter_player import counter_player
 from ai_contenders.mixtral_1 import mixtral_1
 from ai_contenders.anti_random_attacker import anti_random_attacker
 from ai_contenders.full_rebuild import full_rebuild
+from ai_contenders.anti_counter_player import anti_counter_player
 
 # All condenders are added here
 
@@ -20,4 +21,5 @@ ai_list = [
     mixtral_1,
     anti_random_attacker,
     full_rebuild,
+    anti_counter_player,
 ]
