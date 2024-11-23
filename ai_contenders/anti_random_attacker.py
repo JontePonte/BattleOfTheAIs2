@@ -17,9 +17,9 @@ def anti_random_attacker(game_info):
             opponent_health = game_info[ai_name]['health']
             opponent_moves = game_info[ai_name]['moves']
 
-    # if my_health >= 2:
+    # if my_health > 2:
     #     action = "attack"
-    if opponent_health >= 2:
+    if opponent_health > 2:
         action = "defend"
 
     # else:

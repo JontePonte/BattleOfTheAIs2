@@ -27,12 +27,12 @@ def play_round(player1_move, player2_move, game_info):
             player1_health += -1
             player2_health += 0
             player2_moves.append("defend")
-        
+
         elif player2_move == "rebuild":
             player1_health += 0
             player2_health += -2
             player2_moves.append("rebuild")
-    
+
     # Player 1 defend
     elif player1_move == "defend":
         player1_moves.append("defend")
@@ -46,12 +46,12 @@ def play_round(player1_move, player2_move, game_info):
             player1_health += 0
             player2_health += 0
             player2_moves.append("defend")
-        
+
         elif player2_move == "rebuild":
             player1_health += 0
             player2_health += 1
             player2_moves.append("rebuild")
-    
+
     # Player 1 rebuild
     elif player1_move == "rebuild":
         player1_moves.append("rebuild")
@@ -65,7 +65,7 @@ def play_round(player1_move, player2_move, game_info):
             player1_health += 1
             player2_health += 0
             player2_moves.append("defend")
-        
+
         elif player2_move == "rebuild":
             player1_health += 1
             player2_health += 1
