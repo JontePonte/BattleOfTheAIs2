@@ -6,6 +6,11 @@ __pycache__/
 # C extensions
 *.so
 
+# output files
+match_results.html
+tournament_results.csv
+
+
 # Distribution / packaging
 .Python
 build/
