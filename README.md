@@ -11,7 +11,7 @@ Players loose or gain health based of their choices. The matrix below shows the 
                    attack                  defend              rebuild
 attack             -1                      -1                  +0
 defend             +0                      +0                  +0
-rebuild            -2                      +2                  +1
+rebuild            -2                      +1                  +1
 
 
 
