@@ -5,6 +5,8 @@ from ai_contenders.random_attacker import random_attacker
 from ai_contenders.full_defender import full_defender
 from ai_contenders.non_aggressor import non_aggressor
 from ai_contenders.counter_player import counter_player
+from ai_contenders.mixtral_1 import mixtral_1
+
 
 # All condenders are added here
 
@@ -14,4 +16,5 @@ ai_list = [
     full_defender,
     non_aggressor,
     counter_player,
+    mixtral_1,
 ]
