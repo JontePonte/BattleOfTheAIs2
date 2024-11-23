@@ -108,7 +108,7 @@ if len(players) == 2:
 
 
 # Save match results and leaderboard to a single CSV file
-with open("tournament_results.csv", "w") as file:
+with open("tournament_results.csv", "w", encoding="utf-8") as file:
     # Write the leaderboard summary to the file
     df_leaderboard.to_csv(file, index=False)
     
@@ -125,7 +125,7 @@ with open("tournament_results.csv", "w") as file:
 
 
 # Save HTML file with the match results, leaderboard, and winner
-with open("match_results.html", "w") as file:
+with open("match_results.html", "w", encoding="utf-8") as file:
     file.write("<h2>Match Results Table (W/L/D)</h2>")
     file.write(df_results.to_html(index=True))
     file.write("<h2>Leaderboard</h2>")
