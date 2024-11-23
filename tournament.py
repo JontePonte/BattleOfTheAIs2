@@ -54,8 +54,16 @@ for player1_id, player1_data in players.items():
 
 # Find the maximum number of wins
 max_wins = max(player["wins"] for player in players.values())
-# Find all AIs with the maximum wins (in case of a tie)
-total_winners = [player["name"] for player in players.values() if player["wins"] == max_wins]
+
+# Find all AIs with the maximum wins
+potential_winners = [player for player in players.values() if player["wins"] == max_wins]
+
+# If there's a tie in wins, check for draws to determine the winner
+if len(potential_winners) > 1:
+    max_draws = max(player["draws"] for player in potential_winners)
+    total_winners = [player["name"] for player in potential_winners if player["draws"] == max_draws]
+else:
+    total_winners = [potential_winners[0]["name"]]
 
 # Print the total winners
 if len(total_winners) > 1:
@@ -63,6 +71,7 @@ if len(total_winners) > 1:
 else:
     winner_text = f"\nTotal Tournament Winner: {total_winners[0]} with {max_wins} wins"
 print(winner_text)
+
 
 
 # Create a DataFrame for results
@@ -84,7 +93,7 @@ leaderboard_data = {
     "Losses": [player["loses"] for player in players.values()],
     "Draws": [player["draws"] for player in players.values()]
 }
-df_leaderboard = pd.DataFrame(leaderboard_data).sort_values(by="Wins", ascending=False)
+df_leaderboard = pd.DataFrame(leaderboard_data).sort_values(by=["Wins", "Draws"], ascending=False)
 
 # Print the leaderboard in the terminal
 print("\nLeaderboard:")
