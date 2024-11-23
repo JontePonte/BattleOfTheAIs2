@@ -99,12 +99,12 @@ if len(players) == 2:
     moves2 = game_info[player_names[1]]["moves"]
 
     # Header, names of the AI:s
-    print(f"{player_names[0]:<20} {player_names[1]:<20}")
+    print(f"{player_names[0]:<20} {game_info[player_names[0]]["health"]:<4} {player_names[1]:<20} {game_info[player_names[1]]["health"]:<4}")
     print("-" * 40)
 
     # Print the moves
     for move1, move2 in zip(moves1, moves2):
-        print(f"{move1:<20} {move2:<20}")
+        print(f"{move1:<25} {move2:<25}")
 
 
 # Save match results and leaderboard to a single CSV file
