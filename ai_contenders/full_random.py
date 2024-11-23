@@ -11,8 +11,8 @@ def full_random(game_info):
     """ Random choise between attack and defend """
 
     # Unpack game info
-    my_health, my_moves = None, None, None
-    opponent_health, opponent_moves = None, None, None
+    my_health, my_moves = None, None
+    opponent_health, opponent_moves = None, None
     
     for ai_name in game_info:
         if ai_name == inspect.currentframe().f_code.co_name:
