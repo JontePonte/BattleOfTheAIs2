@@ -1,5 +1,4 @@
-"""
-Tournament Simulation for AI Players
+""" Tournament Simulation for AI Players
 
 This module simulates a tournament where AI players compete against each other in pairwise matches.
 Each AI is represented by a function that decides whether to "attack" or "defend" based on game state.

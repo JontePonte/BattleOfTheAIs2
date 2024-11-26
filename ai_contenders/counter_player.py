@@ -1,3 +1,5 @@
+""" Countering Ai """
+
 import inspect
 import random
 

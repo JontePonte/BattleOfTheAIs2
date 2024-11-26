@@ -1,3 +1,4 @@
+""" Random attacker """
 
 import inspect
 import random

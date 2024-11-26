@@ -1,6 +1,7 @@
+""" All prints and output """
+
 
 import pandas as pd
-
 
 
 def print_results(results, game_info, players):
@@ -61,7 +62,7 @@ def print_results(results, game_info, players):
         moves2 = game_info[player_names[1]]["moves"]
 
         # Header, names of the AI:s
-        print(f"{player_names[0]:<20} {game_info[player_names[0]]["health"]:<4} {player_names[1]:<20} {game_info[player_names[1]]["health"]:<4}")
+        print(f"{player_names[0]:<20} {game_info[player_names[0]]['health']:<4} {player_names[1]:<20} {game_info[player_names[1]]['health']:<4}")
         print("-" * 40)
 
         # Print the moves

@@ -1,7 +1,4 @@
-"""
-Random choice AI
-Name: full_random
-"""
+""" Random choice AI """
 
 import inspect
 import random
